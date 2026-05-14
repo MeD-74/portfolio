@@ -1,0 +1,24 @@
+<section id="skills" class="py-24 bg-[#0B1120] text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">Technical Arsenal</h2>
+      <p class="text-lg text-slate-400">The tools and technologies I use to bring ideas to life.</p>
+    </div>
+
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      @for (skill of skills; track skill.name) {
+        <div
+          class="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6 hover:border-primary/50 hover:bg-slate-800/80 transition-all duration-300 group cursor-pointer hover:-translate-y-1"
+        >
+          <h3 class="text-lg font-bold text-slate-200 group-hover:text-white mb-2">
+            {{ skill.name }}
+          </h3>
+        </div>
+      }
+    </div>
+  </div>
+</section>
