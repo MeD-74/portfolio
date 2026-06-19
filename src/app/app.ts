@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core'; // شيلنا OnInit
+import { Component, AfterViewInit } from '@angular/core'; 
 import { NavbarComponent } from './components/navbar/navbar';
 import { Hero } from './components/hero/hero';
 import { About } from './components/about/about';
@@ -16,12 +16,12 @@ import AOS from 'aos';
 export class AppComponent implements AfterViewInit {
   
   ngAfterViewInit() {
-    // استنى 100 مللي ثانية لحد ما الـ HTML كله يترسم، وبعدين شغل المكتبة
+    
     setTimeout(() => {
       AOS.init({
         duration: 800, 
         easing: 'ease-in-out', 
-        once: false, // عشان تفضل تظهر وتختفي وإنت طالع ونازل
+        once: false, 
         offset: 100 
       });
       AOS.refresh();
