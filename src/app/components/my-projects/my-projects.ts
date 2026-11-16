@@ -41,5 +41,16 @@ export class MyProjectsComponent {
       bgColor: 'bg-blue-100 dark:bg-blue-900/30',
       iconColor: 'text-blue-500',
     },
+    {
+      title: 'Sahm POS — Smart Order Workspace',
+      description:
+        'A real-time restaurant POS dashboard with a live orders Kanban, streaming AI assistant, kitchen-load monitor and offline support.',
+      techStack: ['Angular', 'TypeScript', 'RxJS', 'NgRx SignalStore'],
+      githubLink: 'https://github.com/MeD-74/POS-Dashboard',
+      liveLink: 'https://med-74.github.io/POS-Dashboard/',
+      image: 'assets/images/4.png',
+      bgColor: 'bg-amber-100 dark:bg-amber-900/30',
+      iconColor: 'text-amber-500',
+    },
   ];
 }
